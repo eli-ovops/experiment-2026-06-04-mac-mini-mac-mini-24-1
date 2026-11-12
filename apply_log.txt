@@ -1,0 +1,7 @@
+[2026-06-11 12:32:25 +0800] Disable double-space period substitution
+[2026-06-11 12:32:25 +0800] Disable automatic text completion
+[2026-06-11 12:32:25 +0800] Disable automatic spelling correction
+[2026-06-11 12:32:25 +0800] Disable automatic capitalization
+[2026-06-11 12:32:25 +0800] Refresh preference daemon
+[2026-06-11 12:32:25 +0800] Done
+[2026-06-11 12:32:37 +0800] restart text input agents

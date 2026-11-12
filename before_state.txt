@@ -1,0 +1,195 @@
+# Mac keyboard unexpected spaces before state
+generated_at=2026-06-11 12:31:46 +0800
+base_dir=/Users/USER/Documents/Codex/2026-06-04/mac-mini-mac-mini-24-1/work/mac_keyboard_space_fix_20260611_123146
+
+
+===== sw_vers =====
+$ sw_vers
+ProductName:		macOS
+ProductVersion:		26.3
+BuildVersion:		25D125
+
+[exit_code=0]
+
+===== current_user =====
+$ id
+uid=501(cczij) gid=20(staff) groups=20(staff),12(everyone),61(localaccounts),79(_appserverusr),80(admin),81(_appserveradm),33(_appstore),98(_lpadmin),100(_lpoperator),204(_developer),250(_analyticsusers),395(com.apple.access_ftp),398(com.apple.access_screensharing),399(com.apple.access_ssh),400(com.apple.access_remote_ae),701(com.apple.sharepoint.group.1)
+
+[exit_code=0]
+
+===== input_current_layout =====
+$ defaults read com.apple.HIToolbox AppleCurrentKeyboardLayoutInputSourceID
+com.apple.keylayout.PinyinKeyboard
+
+[exit_code=0]
+
+===== input_selected_sources =====
+$ defaults read com.apple.HIToolbox AppleSelectedInputSources
+(
+        {
+        "Bundle ID" = "com.apple.inputmethod.SCIM";
+        "Input Mode" = "com.apple.inputmethod.SCIM.ITABC";
+        InputSourceKind = "Input Mode";
+    }
+)
+
+[exit_code=0]
+
+===== input_enabled_sources =====
+$ defaults read com.apple.HIToolbox AppleEnabledInputSources
+(
+        {
+        InputSourceKind = "Keyboard Layout";
+        "KeyboardLayout ID" = 252;
+        "KeyboardLayout Name" = ABC;
+    },
+        {
+        "Bundle ID" = "com.apple.inputmethod.SCIM";
+        "Input Mode" = "com.apple.inputmethod.SCIM.ITABC";
+        InputSourceKind = "Input Mode";
+    },
+        {
+        "Bundle ID" = "com.apple.inputmethod.SCIM";
+        InputSourceKind = "Keyboard Input Method";
+    },
+        {
+        "Bundle ID" = "com.apple.CharacterPaletteIM";
+        InputSourceKind = "Non Keyboard Input Method";
+    }
+)
+
+[exit_code=0]
+
+## Global keyboard/text prefs
+
+===== NSGlobalDomain ApplePressAndHoldEnabled =====
+2026-06-11 12:31:46.876 defaults[60221:11896228] 
+The domain/default pair of (kCFPreferencesAnyApplication, ApplePressAndHoldEnabled) does not exist
+
+===== NSGlobalDomain KeyRepeat =====
+2026-06-11 12:31:46.881 defaults[60222:11896231] 
+The domain/default pair of (kCFPreferencesAnyApplication, KeyRepeat) does not exist
+
+===== NSGlobalDomain InitialKeyRepeat =====
+2026-06-11 12:31:46.885 defaults[60223:11896234] 
+The domain/default pair of (kCFPreferencesAnyApplication, InitialKeyRepeat) does not exist
+
+===== NSGlobalDomain NSAutomaticPeriodSubstitutionEnabled =====
+1
+
+===== NSGlobalDomain NSAutomaticSpellingCorrectionEnabled =====
+2026-06-11 12:31:46.895 defaults[60225:11896240] 
+The domain/default pair of (kCFPreferencesAnyApplication, NSAutomaticSpellingCorrectionEnabled) does not exist
+
+===== NSGlobalDomain NSAutomaticTextCompletionEnabled =====
+2026-06-11 12:31:46.900 defaults[60226:11896243] 
+The domain/default pair of (kCFPreferencesAnyApplication, NSAutomaticTextCompletionEnabled) does not exist
+
+===== NSGlobalDomain NSAutomaticCapitalizationEnabled =====
+1
+
+===== NSGlobalDomain NSAutomaticDashSubstitutionEnabled =====
+2026-06-11 12:31:46.910 defaults[60228:11896249] 
+The domain/default pair of (kCFPreferencesAnyApplication, NSAutomaticDashSubstitutionEnabled) does not exist
+
+===== NSGlobalDomain NSAutomaticQuoteSubstitutionEnabled =====
+2026-06-11 12:31:46.915 defaults[60229:11896252] 
+The domain/default pair of (kCFPreferencesAnyApplication, NSAutomaticQuoteSubstitutionEnabled) does not exist
+
+## Accessibility keyboard prefs subset
+
+===== com.apple.universalaccess stickyKey =====
+2026-06-11 12:31:46.920 defaults[60230:11896255] 
+The domain/default pair of (com.apple.universalaccess, stickyKey) does not exist
+
+===== com.apple.universalaccess stickyKeyEnabled =====
+2026-06-11 12:31:46.925 defaults[60231:11896258] 
+The domain/default pair of (com.apple.universalaccess, stickyKeyEnabled) does not exist
+
+===== com.apple.universalaccess StickyKeysEnabled =====
+2026-06-11 12:31:46.930 defaults[60232:11896261] 
+The domain/default pair of (com.apple.universalaccess, StickyKeysEnabled) does not exist
+
+===== com.apple.universalaccess slowKey =====
+2026-06-11 12:31:46.935 defaults[60233:11896264] 
+The domain/default pair of (com.apple.universalaccess, slowKey) does not exist
+
+===== com.apple.universalaccess slowKeyEnabled =====
+2026-06-11 12:31:46.939 defaults[60234:11896267] 
+The domain/default pair of (com.apple.universalaccess, slowKeyEnabled) does not exist
+
+===== com.apple.universalaccess SlowKeysEnabled =====
+2026-06-11 12:31:46.943 defaults[60235:11896270] 
+The domain/default pair of (com.apple.universalaccess, SlowKeysEnabled) does not exist
+
+===== com.apple.Accessibility stickyKey =====
+2026-06-11 12:31:46.948 defaults[60236:11896273] 
+The domain/default pair of (com.apple.Accessibility, stickyKey) does not exist
+
+===== com.apple.Accessibility stickyKeyEnabled =====
+2026-06-11 12:31:46.952 defaults[60237:11896276] 
+The domain/default pair of (com.apple.Accessibility, stickyKeyEnabled) does not exist
+
+===== com.apple.Accessibility StickyKeysEnabled =====
+2026-06-11 12:31:46.958 defaults[60238:11896279] 
+The domain/default pair of (com.apple.Accessibility, StickyKeysEnabled) does not exist
+
+===== com.apple.Accessibility slowKey =====
+2026-06-11 12:31:46.963 defaults[60239:11896282] 
+The domain/default pair of (com.apple.Accessibility, slowKey) does not exist
+
+===== com.apple.Accessibility slowKeyEnabled =====
+2026-06-11 12:31:46.971 defaults[60240:11896285] 
+The domain/default pair of (com.apple.Accessibility, slowKeyEnabled) does not exist
+
+===== com.apple.Accessibility SlowKeysEnabled =====
+2026-06-11 12:31:46.977 defaults[60241:11896288] 
+The domain/default pair of (com.apple.Accessibility, SlowKeysEnabled) does not exist
+
+## HID keyboard mapping
+
+===== hidutil_user_key_mapping =====
+$ /usr/bin/hidutil property --get UserKeyMapping
+(null)
+
+[exit_code=0]
+
+## Connected keyboard-ish devices
+
+===== usb_keyboard_devices =====
+$ /usr/sbin/system_profiler SPUSBDataType
+
+[exit_code=0]
+
+===== bluetooth_devices =====
+$ /usr/sbin/system_profiler SPBluetoothDataType
+Bluetooth:
+
+      Bluetooth Controller:
+          Address: 1C:F6:4C:62:69:57
+          State: On
+          Chipset: BCM_4388C2
+          Discoverable: Off
+          Firmware Version: 23.3.214.1297
+          Product ID: 0x4A3E
+          Supported services: 0x392039 < HFP AVRCP A2DP HID Braille LEA AACP GATT SerialPort >
+          Transport: PCIe
+          Vendor ID: 0x004C (Apple)
+      Connected:
+          BT3.0 Mouse:
+              Address: 53:08:13:08:0B:40
+              Vendor ID: 0x046D
+              Product ID: 0xB016
+              Firmware Version: 1.2.9
+              Minor Type: Mouse
+              RSSI: -46
+              Services: 0x800020 < HID ACL >
+      Not Connected:
+          HECATE G3M Pro:
+              Address: DF:C9:FE:6F:2B:A7
+              Vendor ID: 0x25A7
+              Product ID: 0xFA6C
+              Minor Type: Mouse
+
+
+[exit_code=0]

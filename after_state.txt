@@ -1,0 +1,26 @@
+# After keyboard space fix
+generated_at=2026-06-11 12:32:25 +0800
+
+===== NSAutomaticPeriodSubstitutionEnabled =====
+0
+
+===== NSAutomaticTextCompletionEnabled =====
+0
+
+===== NSAutomaticSpellingCorrectionEnabled =====
+0
+
+===== NSAutomaticCapitalizationEnabled =====
+0
+
+===== input current layout =====
+com.apple.keylayout.PinyinKeyboard
+
+===== selected input sources =====
+(
+        {
+        "Bundle ID" = "com.apple.inputmethod.SCIM";
+        "Input Mode" = "com.apple.inputmethod.SCIM.ITABC";
+        InputSourceKind = "Input Mode";
+    }
+)
